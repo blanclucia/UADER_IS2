@@ -13,6 +13,7 @@ classDiagram
 
     class Estudiante {
         +carrera: string
+        +facultad: string
         +solicitarPrestamo()
         +renovarPrestamo()
     }
@@ -47,6 +48,12 @@ classDiagram
         +calcularMonto()
     }
 
+    class Reserva{
+        +idReserva: int
+        +fechaReserva: date
+        +estado: string
+    }
+
     Usuario <|-- Estudiante
     Usuario <|-- Bibliotecario
     Libro "1" --> "1..*" Ejemplar
@@ -54,4 +61,6 @@ classDiagram
     Bibliotecario "1" --> "0..*" Prestamo
     Ejemplar "1" --> "0..1" Prestamo
     Prestamo "1" --> "0..1" Multa
+    Reserva "1" --> "0..1" Usuario
+    Reserva "1" --> "0..1" Ejemplar
 ```
