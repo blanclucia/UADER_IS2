@@ -6,7 +6,7 @@ Este diagrama describe cómo cambia el estado de un ejemplar o préstamo a lo la
 stateDiagram-v2
     [*] --> Disponible
     Disponible --> Prestado : préstamo solicitado
-    Prestado --> Vencido : fecha de vencimiento excedida
+    Prestado --> Vencido : tieieie
     Prestado --> Disponible : devolución realizada
     Vencido --> Multado : se aplica sanción
     Multado --> Disponible : pago de multa / renovación
