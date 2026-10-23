@@ -1,0 +1,29 @@
+Creá un juego 2D en Python utilizando pygame, donde el jugador controla una nave espacial y debe esquivar meteoritos.
+
+Quiero una primera versión sencilla, completa y funcional, con código fácil de entender para alguien que está aprendiendo Python.
+
+Requisitos del juego:
+
+- Ventana de 800 × 600 píxeles con fondo espacial.
+- La nave comienza en la parte inferior y se mueve horizontalmente con las flechas izquierda y derecha o las teclas A y D.
+- La nave no puede salir de los límites de la ventana.
+- Los meteoritos aparecen en posiciones aleatorias en la parte superior y caen hacia abajo, con distintos tamaños y velocidades.
+- El jugador debe esquivarlos: no hay disparos.
+- El puntaje aumenta según el tiempo de supervivencia y se muestra en pantalla.
+- La dificultad aumenta progresivamente, incrementando la velocidad y la frecuencia de los meteoritos.
+- Si un meteorito choca con la nave, aparece una pantalla de “Game Over” con el puntaje final.
+- Desde esa pantalla se puede reiniciar con R o salir con Escape.
+- La ventana debe poder cerrarse correctamente en cualquier momento.
+Requisitos técnicos:
+
+- Utilizá figuras dibujadas con pygame para la nave, los meteoritos y las estrellas, sin depender de imágenes, sonidos ni archivos externos.
+- Organizá el código con funciones y, cuando resulte útil, clases sencillas.
+- Usá nombres claros y agregá comentarios en español que expliquen las partes principales.
+- Controlá los FPS y utilizá el tiempo transcurrido entre fotogramas (delta time) para que el movimiento sea consistente.
+- Al reiniciar, restablecé el puntaje, la dificultad, la nave y los meteoritos.
+Creá en el proyecto:
+
+1. `main.py` con el código completo del juego.
+2. `requirements.txt` con las dependencias.
+3. `README.md` con instrucciones para crear un entorno virtual, instalar las dependencias y ejecutar el juego desde la terminal de VSCode. Incluí comandos para Windows y macOS/Linux.
+Implementá el juego completo, sin pseudocódigo ni secciones pendientes. Al terminar, explicá brevemente cómo está organizado el código y qué variables puedo modificar para ajustar la dificultad.
